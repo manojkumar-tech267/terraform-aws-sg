@@ -3,7 +3,7 @@ locals {
         Project     = var.project
         Environment = var.environment
         Terraform = true
-    },
+    }
     sg_final_tags = merge(
     var.sg_tags,
     local.common_tags,
