@@ -11,4 +11,6 @@ locals {
         Name = "${var.project}-${var.environment}-${var.sg_name}"
     }
     )
+    sg_name = "${var.project}-${var.environment}-${var.sg_name}"
+    sg_description = "Allow TLS inbound traffic for ${var.project} project in ${var.environment} environment for component ${var.sg_name}"
 }
